@@ -324,48 +324,119 @@
   padding-top: 10px;
   font-size: 13px;
 }
-/* --- Ajustements pour la Responsivité --- */
-
-/* Tablettes (écrans inférieurs à 992px) */
-@media (max-width: 820px) {
-    .container5 {
-        flex-wrap: wrap; /* Permet aux éléments de passer à la ligne */
-        justify-content: center;
-    }
-
-    .img {
-        width: max-width(45% - 25px); /* Environ 2 par ligne en tenant compte du gap */
-        min-width: 200px; /* Sécurité pour ne pas être trop petit */
-    }
-}
-
-/* Téléphones (écrans inférieurs à 600px) */
+/* Téléphone */
 @media (max-width: 414px) {
-    .container5 {
-        flex-direction: column; /* Aligne les éléments verticalement */
-        align-items: center;
-    }
-    .header{
-        width: 412px;
-        /* width: 40%; */
-    }
 
-    .img {
-        width: 90%; /* Prend presque toute la largeur */
-    }
-
-    /* Optionnel : Ajuster aussi la section Histoire pour mobile */
-    .histoire .container {
+    .container {
         flex-direction: column;
     }
-    
-    .text, .image {
+
+    .text,
+    .image {
         width: 100%;
     }
 
+    .image img {
+        height: 250px;
+        object-fit: cover;
+    }
+
+    .container2 {
+        flex-direction: column;
+        align-items: center;
+    }
+    .header-inner {
+        flex-wrap: wrap;
+    }
+
+    .nav {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .card {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .container5 {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .img {
+        width: 100%;
+        max-width: 320px;
+    }
+
+    
+    .img img {
+    width: 100%;
+    height: 250px;
+}
     .fin-content {
         flex-direction: column;
-        gap: 30px;
+        gap: 25px;
+    }
+
+    .bloc {
+        width: 100%;
+    }
+
+    .banner {
+        height: 220px;
+        padding-top: 100px;
+    }
+
+    .banner h1 {
+        font-size: 28px;
+    }
+
+    .banner p {
+        font-size: 15px;
+    }
+}
+@media (max-width: 820px) {
+
+    .container {
+        flex-direction: column;
+    }
+
+    .text,
+    .image {
+        width: 100%;
+    }
+
+    .img img {
+    width: 100%;
+    height: 250px;
+}
+
+    
+    .card {
+        width: 45%;
+    }
+
+    .container5 {
+        flex-wrap: wrap;
+    }
+
+    .img {
+        width: 45%;
+    }
+
+    .img img {
+        height: 300px;
+        object-fit: cover;
+    }
+
+    .fin-content {
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    .bloc {
+        width: 45%;
     }
 }
 
