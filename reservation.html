@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>projets</title>
+    <style>
+         body {
+            font-family: Arial, sans-serif;
+            background: #FFF7ED;
+            color: #FFF7ED;
+            padding-top: 92px;
+            overflow-x: hidden;
+        }
+
+        img {
+            max-width: 100%;
+            display: block;
+        }
+
+        a,
+        button,
+        input,
+        textarea,
+        select {
+            font: inherit;
+        }
+
+        .container {
+            width: min(100% - 32px, 1200px);
+            margin: 0 auto;
+        }
+
+
+        .header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background: #7C2D12;
+            border: 1px solid;
+            box-shadow: 0 6px 18px rgba(0, 0, 0, 0.05);
+        }
+
+
+        .header-inner {
+            min-height: 92px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 20px;
+        }
+
+
+        .brand {
+            display: flex;
+            align-items: center;
+            gap: 14px;
+            text-decoration: none;
+            color: ;
+            min-width: 0;
+        }
+
+        .logo {
+            width:100%;
+            height: 76px;
+            flex: 0 0 56px;
+            border-radius: 16px;
+            background: #FFF7ED;
+            color: #ffffff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 10px 18px rgba(47, 90, 168, 0.18);
+        }
+
+        .brand-text {
+            display: flex;
+            flex-direction: column;
+            font-family: serif;
+            gap: 2px;
+            width: 100%;
+        }
+
+        .brand-text strong {
+            font-size: 16px;
+            color: #1C1917;
+            font-family: serif;
+            overflow: hidden;
+        }
+
+        .brand-text span {
+            font-size: 13px;
+            color:#1C1917;
+            white-space: nowrap;
+            overflow: hidden;
+        }
+
+        .nav {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+
+        .nav a {
+            text-decoration: none;
+            color: #D97706;
+            padding: 10px 16px;
+            font-size: 14px;
+            font-weight: 600;
+            border-radius: 999px;
+            transition: 0.3s ease;
+        }
+
+        .nav a:hover,
+        .nav a:focus-visible {
+            background: #FFF7ED;
+            color:#D97;
+            outline: none;
+            }
+            .banner5 {
+    background-image: url("rest.jpeg");
+    background-size: cover;
+    background-position: center;
+    height: 170px;
+    text-align: center;
+    padding-top: 80px;
+}
+.banner5 h1{
+    color: #D97706;
+}
+.lebloc {
+  width: 400px;
+  margin: 50px auto;
+}
+
+.form {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+label {
+  display: block;
+  margin-top: 15px;
+  font-size: 14px;
+  font-family: serif;
+  color: #D97706;
+}
+
+input, select, textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  font-family: serif;
+  border-radius: 5px;
+}
+
+textarea {
+  height: 100px;
+}
+
+.moi {
+  display: flex;
+  gap: 10px;
+}
+
+.moi div {
+  flex: 1;
+}
+
+button {
+  width: 100%;
+  margin-top: 20px;
+  padding: 12px;
+  background: black;
+  color: gold;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #222;
+}
+  .fin {
+  background-color:#FFF7ED;
+  color: white;
+  padding: 40px 20px 10px;
+  margin-top: 25px;
+}
+
+.fin-content {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.bloc {
+  width: 30%;
+  min-width: 250px;
+  color: #78716C;
+}
+
+.bloc h3 {
+  border-bottom: 2px solid #D97706;
+  padding-bottom: 5px;
+  margin-bottom: 15px;
+  color: #D97706;
+  font-family: serif;
+}
+
+.bloc p {
+  font-size: 14px;
+  line-height: 1.6;
+  color: #78716C;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.reseau a {
+  display: inline-block;
+  margin-right: 10px;
+  background: #FFF7ED;
+  color: #78716C;
+  width: 35px;
+  height: 35px;
+  text-align: center;
+  line-height: 35px;
+  border-radius: 50%;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.fin-bottom {
+  text-align: center;
+  border-top: 1px solid #D97706;
+  color: #78716C;
+  margin-top: 30px;
+  padding-top: 10px;
+  font-size: 13px;
+}
+/* TABLETTE */
+@media (max-width: 820px){
+  .lebloc{
+    width: min(100% - 32px, 450px);
+  }
+}
+
+/* TELEPHONE */
+@media (max-width: 414px){
+
+  .moi{
+    flex-direction: column; /* passe en colonne */
+  }
+
+  .banner5{
+    height: 140px;
+    padding-top: 60px;
+  }
+
+  .banner5 h1{
+    font-size: 18px;
+  }
+
+  button{
+    font-size: 14px;
+  }
+}
+
+
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="container header-inner">
+
+            <!-- Logo + nom -->
+            <a href="#accueil" class="brand">
+                <div class="logo"><img src="logo.jpeg" alt=""></div>
+                <div class="brand-text">
+                    <strong>Teranga Food</strong>
+                </div>
+            </a>
+
+            <label for="menuToggle" class="menu-toggle" aria-label="Ouvrir le menu">
+               <label for="menuToggle" class="menu-toggle" aria-label="Ouvrir le menu"></label>
+                <span></span>
+            </label>
+
+            <!-- Menu de navigation -->
+            <nav class="nav">
+                <a href="index.html">Accueil</a>
+                 <a href="menu.html">MENU</a>
+                <a href="about.html">A propos</a>
+                <a href="galerie.html">Galerie</a>
+                <a href="reservation.html">Contact</a>
+            </nav>
+
+        </div>
+    </div>
+    <div class="banner5">
+    <h1>reservation TERANGA FOOD</h1>
+</div>
+<div class="lebloc">
+  <div class="form">
+
+    <label>Nom complet </label>
+    <input type="text" placeholder="Votre nom complet" required>
+
+    <label>Adresse e-mail </label>
+    <input type="email" placeholder="exemple@email.com" required>
+
+    <label>Numéro de téléphone </label>
+    <input type="tel" placeholder="votre Numéro" required>
+
+    <div class="moi">
+      <div>
+        <label>Date de réservation </label>
+        <input type="date">
+      </div>
+
+      <div>
+        <label>Heure *</label>
+        <input type="time">
+      </div>
+    </div>
+
+    <label>Nombre de personnes *</label>
+    <select required>
+      <option>Sélectionnez</option>
+      <option>1 personne</option>
+      <option>2 personnes</option>
+      <option>3 personnes</option>
+      <option>4 personnes</option>
+      <option>5+</option>
+    </select>
+
+    <label>Message </label>
+    <textarea placeholder="Votre message..." required></textarea>
+
+    <button type="submit"><i class="fa-regular fa-calendar-check">Réserver</i></button>
+
+</div>
+</div>
+<div class="fin">
+  <div class="fin-content">
+
+    <div class="bloc">
+      <h3>NOUS CONTACTER</h3>
+      <p><strong>TERANGA FOOD</strong><br>
+      Dakar<br>
+      7rue mermoz</p>
+
+      <p>
+      Téléphone : 777740265<br>
+      E-mail : terangafood@gmail.com
+      </p>
+    </div>
+
+    <div class="bloc">
+      <h3>HORAIRES D'OUVERTURE</h3>
+      <p>
+      Lundi - Vendredi : 11h30 - 14h30 / 18h30 - 22h30<br>
+      Samedi : 12h00 - 15h00 / 19h00 - 23h00<br>
+      Dimanche : Fermé
+      </p>
+    </div>
+
+    <div class="bloc">
+      <h3>SUIVEZ-NOUS</h3>
+      <div class="reseau">
+        <a href="#"><i class="fa-brands fa-square-instagram"></i></a>
+        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+        <a href="#"><i class="fa-brands fa-snapchat"></i></a>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="fin-bottom">
+    <p>Copyright © 2026 TERANGA FOOD. Tous droits réservés.</p>
+  </div>
+    </div>
+
+</body>
+</html>

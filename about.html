@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>projets</title>
+    <style>
+         body {
+            font-family: Arial, sans-serif;
+            background: #FFF7ED;
+            color: #FFF7ED;
+            padding-top: 92px;
+            overflow-x: hidden;
+        }
+        
+
+        img {
+            max-width: 100%;
+            display: block;
+        }
+
+        a,
+        button,
+        input,
+        textarea,
+        select {
+            font: inherit;
+        }
+
+        .container {
+            width: min(100% - 32px, 1200px);
+            margin: 0 auto;
+        }
+
+
+        .header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background: #7C2D12;
+            border: 1px solid;
+        }
+
+
+        .header-inner {
+            min-height: 92px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 20px;
+        }
+
+
+        .brand {
+            display: flex;
+            align-items: center;
+            gap: 14px;
+            text-decoration: none;
+            color:brown ;
+            min-width: 0;
+        }
+
+        .logo {
+            width:100%;
+            height: 76px;
+            flex: 0 0 56px;
+            border-radius: 16px;
+            background: #FFF7ED;
+            color: #ffffff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .brand-text {
+            display: flex;
+            flex-direction: column;
+            gap: 2px;
+            width: 100%;
+        }
+
+        .brand-text strong {
+            font-size: 16px;
+            color: #1C1917;
+            overflow: hidden;
+        }
+
+        .brand-text span {
+            font-size: 13px;
+            color:#1C1917;
+            white-space: nowrap;
+            overflow: hidden;
+        }
+
+        .nav {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+
+        .nav a {
+            text-decoration: none;
+            color: #D97706;
+            padding: 10px 16px;
+            font-size: 14px;
+            font-weight: 600;
+            border-radius: 999px;
+            transition: 0.3s ease;
+        }
+
+        .nav a:hover,
+        .nav a:focus-visible {
+            background: #FFF7ED;
+            color:#D97;
+            outline: none;
+            }
+              .banner {
+    background-image: url("rest.jpeg");
+    background-position: center;
+    height: 170px;
+    text-align: center;
+    padding-top: 80px;
+}
+.banner h1{
+    color: #D97706;
+}
+.banner p{
+    color: #D97706;
+}
+.histoire {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+}
+
+/* TITRE */
+.histoire h1 {
+    text-align: center;
+    color: #D97706;
+}
+
+.line {
+    width: 80px;
+    height: 3px;
+    background: #FFF7ED;
+    margin:  40px;
+}
+
+/* SECTION */
+.container {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+/* TEXTE */
+.text {
+    width: 50%;
+}
+
+.text p {
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    color:#1C1917;
+}
+
+/* IMAGE */
+.image {
+    width: 50%;
+}
+
+.image img {
+    width: 100%;
+    border-radius: 15px;
+    height: 390px;
+}
+
+    h2 {
+      margin: 30px ;
+      color: #D97706;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-family: serif;
+    }
+
+    .container2 {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      padding: 20px;
+      background-color: #FFF7ED;
+    }
+
+    .card {
+      background: #fff;
+      width: 180px;
+      padding: 20px;
+      border-radius: 10px;
+      transition: transform 0.3s;
+    }
+
+
+    .card img {
+      width: 60px;
+      height: 60px;
+      margin-bottom: 10px;
+    }
+
+    .card h3 {
+      margin: 10px 0 5px;
+      font-size: 16px;
+      color: #D97706;
+      font-family: serif;
+    }
+
+    .card p {
+      font-size: 13px;
+      color: #555;
+    }
+    h1{
+    text-align:center;
+    margin-bottom:40px;
+    color:#D97706;
+    font-size:25px;
+}
+
+.container5{
+    display:flex;
+    justify-content:center;
+    gap:25px;
+}
+
+.img{
+    background:white;
+    width:220px;
+    border-radius:15px;
+    overflow:hidden;
+    transition:0.3s;
+}
+.img:hover{
+    transform:scale(1.05);
+}
+
+.img img{
+    width:100%;
+    height:250px;
+}
+
+.info{
+    padding:15px;
+    text-align:center;
+}
+
+.info h2{
+    font-size:20px;
+    margin-bottom:8px;
+    color:#D97706;
+    font-family: serif
+}
+
+.info p{
+    color:;
+    font-weight:bold;
+    color: #555;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.fin {
+  background-color:#FFF7ED;
+  color: white;
+  padding: 40px 20px 10px;
+  margin-top: 25px;
+}
+
+.fin-content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.bloc {
+  width: 30%;
+  min-width: 250px;
+  color: #78716C;
+}
+
+.bloc h3 {
+  border-bottom: 2px solid #D97706;
+  padding-bottom: 5px;
+  margin-bottom: 15px;
+  color: #D97706;
+  font-family: serif;
+}
+
+.bloc p {
+  font-size: 14px;
+  line-height: 1.6;
+  color: #78716C;
+  font-family: Arial, Helvetica, sans-serif;
+  
+}
+
+.reseau a {
+  display: inline-block;
+  margin-right: 10px;
+  background: #FFF7ED;
+  color: #78716C;
+  width: 35px;
+  height: 35px;
+  text-align: center;
+  line-height: 35px;
+  border-radius: 50%;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.fin-bottom {
+  text-align: center;
+  border-top: 1px solid #D97706;
+  color: #78716C;
+  margin-top: 30px;
+  padding-top: 10px;
+  font-size: 13px;
+}
+/* --- Ajustements pour la Responsivité --- */
+
+/* Tablettes (écrans inférieurs à 992px) */
+@media (max-width: 820px) {
+    .container5 {
+        flex-wrap: wrap; /* Permet aux éléments de passer à la ligne */
+        justify-content: center;
+    }
+
+    .img {
+        width: max-width(45% - 25px); /* Environ 2 par ligne en tenant compte du gap */
+        min-width: 200px; /* Sécurité pour ne pas être trop petit */
+    }
+}
+
+/* Téléphones (écrans inférieurs à 600px) */
+@media (max-width: 414px) {
+    .container5 {
+        flex-direction: column; /* Aligne les éléments verticalement */
+        align-items: center;
+    }
+    .header{
+        width: 412px;
+        /* width: 40%; */
+    }
+
+    .img {
+        width: 90%; /* Prend presque toute la largeur */
+    }
+
+    /* Optionnel : Ajuster aussi la section Histoire pour mobile */
+    .histoire .container {
+        flex-direction: column;
+    }
+    
+    .text, .image {
+        width: 100%;
+    }
+
+    .fin-content {
+        flex-direction: column;
+        gap: 30px;
+    }
+}
+
+
+    </style>
+</head>
+<body>
+     <div class="header">
+        <div class="container header-inner">
+
+            <!-- Logo + nom -->
+            <a href="#accueil" class="brand">
+                <div class="logo"><img src="logo.jpeg" alt=""></div>
+                <div class="brand-text">
+                    <strong>Teranga Food</strong>
+                </div>
+            </a>
+
+            <label for="menuToggle" class="menu-toggle" aria-label="Ouvrir le menu">
+                 <label for="menuToggle" class="menu-toggle" aria-label="Ouvrir le menu"></label>
+                <span></span>
+            </label>
+
+            <!-- Menu de navigation -->
+            <nav class="nav">
+                 <a href="index.html">Accueil</a>
+                <a href="menu.html">Menu</a>
+                <a href="about.html">A propos</a>
+                <a href="galerie.html">Galerie</a>
+                <a href="reservation.html">Contact</a>
+            </nav>
+        </div>
+    </div>
+     <div class="banner">
+    <h1>À PROPOS DE TERANGA FOOD</h1>
+    <p>L'Authenticité du Sénégal dans votre Assiette</p>
+</div>
+<div class="histoire">
+<h1>NOTRE HISTOIRE</h1>
+<div class="line"></div>
+
+<div class="container">
+    
+    <div class="text">
+        <p>
+           Notre restaurant est né d’une passion profonde pour la cuisine africaine et du désir de partager ses richesses avec le monde. Inspirés par les saveurs authentiques du Sénégal et d’ailleurs, nous avons créé un lieu chaleureux où tradition et modernité se rencontrent. Chaque plat raconte une histoire, celle des recettes transmises de génération en génération, préparées avec des ingrédients frais et un savoir-faire unique. Plus qu’un simple restaurant, nous vous invitons à vivre une véritable expérience culinaire, un voyage au cœur de l’Afrique, où l’accueil, le partage et la convivialité sont au centre de tout.
+           Au-delà des repas, notre ambition est de faire découvrir toute la richesse culturelle africaine à travers une expérience conviviale et immersive.
+           Notre engagement repose sur la qualité, l’hygiène irréprochable et un accueil chaleureux, fidèle à la célèbre teranga sénégalaise. Que vous veniez en famille, entre amis ou pour découvrir de nouvelles saveurs, notre restaurant est un lieu de partage, de découverte et de plaisir.
+        </p>
+    </div>
+
+    <div class="image">
+        <img src="photo1.jpeg">
+    </div>
+
+</div>
+</div>
+<h2>Nos valeurs</h2>
+
+  <div class="container2">
+
+    <div class="card">
+      <a href=""><i class="fa-solid fa-bowl-rice"></i></a>
+      <h3>Qualité</h3>
+      <p>Une hygiène irréprochable, des produits frais.</p>
+    </div>
+
+    <div class="card">
+       <a href=""><i class="fa-solid fa-hand-sparkles"></i></a>
+      <h3>Hygiène</h3>
+      <p>Respect strict des normes de sécurité alimentaire.</p>
+    </div>
+
+    <div class="card">
+      <a href=""><i class="fa-regular fa-face-grin-beam"></i></a>
+      <h3>Accueil</h3>
+      <p>Une équipe chaleureuse et souriante.</p>
+    </div>
+
+    <div class="card">
+      <a href=""><i class="fa-solid fa-hand-holding-heart"></i></a>
+      <h3>Tradition</h3>
+      <p>Recettes authentiques et savoir-faire artisanal.</p>
+    </div>
+
+  </div>
+  <h1>Notre Équipe</h1>
+
+<div class="container5">
+
+    <div class="img">
+        <img src="wee.jpeg" alt="">
+        <div class="info">
+            <h2>Asma</h2>
+            <p>Cheffe Cuisine</p>
+        </div>
+    </div>
+
+    <div class="img">
+        <img src="man.jpeg" alt="">
+        <div class="info">
+            <h2>Mouhamed</h2>
+            <p>Chef Boulanger</p>
+        </div>
+    </div>
+
+    <div class="img">
+        <img src="men.jpeg" alt="">
+        <div class="info">
+            <h2>Marega</h2>
+            <p>Responsable Accueil</p>
+        </div>
+    </div>
+     <div class="img">
+        <img src="serv.jpeg" alt="">
+        <div class="info">
+            <h2>mahib</h2>
+            <p>serveur</p>
+        </div>
+    </div>
+
+</div>
+<div class="histoire">
+<h1>Ambiance du restaurant</h1>
+<div class="line"></div>
+
+<div class="container">
+    
+    <div class="text">
+        <p>
+Un restaurant est bien plus qu’un simple lieu où l’on vient se restaurer : c’est un véritable espace de vie, de rencontre et de découverte culinaire. À travers ses plats, il raconte une histoire et met en valeur le savoir-faire du chef ainsi que la richesse des ingrédients utilisés. Chaque recette est pensée pour éveiller les sens, mêlant saveurs, couleurs et parfums afin d’offrir une expérience unique aux clients.
+
+L’ambiance joue également un rôle essentiel dans l’expérience globale. La décoration, la musique, l’éclairage et l’agencement du lieu contribuent à créer une atmosphère chaleureuse et accueillante. Que ce soit dans un cadre moderne, traditionnel ou chic, chaque détail est conçu pour mettre les clients à l’aise et leur permettre de passer un moment agréable.
+
+Le restaurant est aussi un lieu de partage et de convivialité. On s’y retrouve en famille, entre amis ou entre collègues pour célébrer des événements, discuter ou simplement profiter d’un bon repas. Le service, assuré par un personnel attentif et professionnel, participe à rendre ce moment encore plus plaisant en répondant aux besoins des clients avec sourire et efficacité.
+        </p>
+    </div>
+
+    <div class="image">
+        <img src="tam.jpeg">
+    </div>
+
+</div>
+</div>
+<div class="fin">
+  <div class="fin-content">
+
+    <div class="bloc">
+      <h3>NOUS CONTACTER</h3>
+      <p><strong>TERANGA FOOD</strong><br>
+      Dakar<br>
+      7rue mermoz</p>
+
+      <p>
+      Téléphone : 777740265<br>
+      E-mail : terangafood@gmail.com
+      </p>
+    </div>
+
+    <div class="bloc">
+      <h3>HORAIRES D'OUVERTURE</h3>
+      <p>
+      Lundi - Vendredi : 11h30 - 14h30 / 18h30 - 22h30<br>
+      Samedi : 12h00 - 15h00 / 19h00 - 23h00<br>
+      Dimanche : Fermé
+      </p>
+    </div>
+
+    <div class="bloc">
+      <h3>SUIVEZ-NOUS</h3>
+      <div class="reseau">
+        <a href="#"><i class="fa-brands fa-square-instagram"></i></a>
+        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+        <a href="#"><i class="fa-brands fa-snapchat"></i></a>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="fin-bottom">
+    <p>Copyright © 2026 TERANGA FOOD. Tous droits réservés.</p>
+  </div>
+    </div>
+
+</body>
+</html>
